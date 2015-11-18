@@ -1,0 +1,41 @@
+<ion-view view-title="话题"  hide-nav-bar="true">
+
+  <ion-header-bar
+  class="bar-forsix"
+  align-title="center">
+    <div class="buttons">
+    </div>
+  <h1 class="title">
+    话题
+  </h1>
+  <div class="buttons">
+
+  </div>
+</ion-header-bar>
+
+  <ion-content class="gbg">
+    <ion-refresher on-refresh="doRefresh()"
+                            pulling-text="下拉刷新..."
+                            refreshing-text="正在刷新"
+                            refreshing-icon="ion-loading-b">
+      </ion-refresher>
+    <div class="list">
+        <div class="item item-divider">
+          关注的
+        </div>
+        <div class="item item-thumbnail-left" ui-sref="share.list" ng-repeat="item in attention">
+          <img ng-src="{{item.ico}}">
+          <h2>{{item.title}}</h2>
+          <p>{{item.label}}</p>
+        </div>
+        <div class="item item-divider">
+          分类的
+        </div>
+        <div class="item item-thumbnail-left" ui-sref="share.list" ng-repeat="item in classify">
+          <img ng-src="{{item.ico}}">
+          <h2>{{item.title}}</h2>
+          <p>{{item.label}}</p>
+        </div>
+    </div>
+  </ion-content>
+</ion-view>

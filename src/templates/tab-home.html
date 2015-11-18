@@ -1,0 +1,59 @@
+<ion-view view-title="首页" hide-nav-bar="true">
+  <ion-content class="gbg">
+    <ion-refresher on-refresh="doRefresh()"
+                            pulling-text="下拉刷新..."
+                            refreshing-text="正在刷新"
+                            refreshing-icon="ion-loading-b">
+      </ion-refresher>
+
+      <div class="header-pic"><img src="./img/home-header-bg.png"></div>
+      <div class="list" style="margin-top:-5px;">
+        <div class="item item-divider" >
+          快捷导航
+        </div>
+        <div class="item row mtab" >
+          <div class="col"><i class="ion-nav-01"></i>图库</div>
+          <div class="col"><i class="ion-nav-02"></i>点菜</div>
+        </div>
+
+
+          <div class="item item-box item-icon-right">
+            <i class="ion-news-01"></i>
+            <span class="box-title active">今日推荐</span>
+            <i class="icon ion-ios-arrow-right icon-accessory"></i>
+            <section class="list">
+               <div class="item item-pic" ng-repeat="item in pageData.recommend">
+                 <img ng-src="{{item.pic}}" alt="">
+                 <span class="title">{{item.title}}</span>
+               </div>
+            </section>
+          </div>
+          <div class="item item-box  item-icon-right">
+            <i class="ion-news-02"></i>
+            <span class="box-title">排行榜</span>
+            <i class="icon ion-ios-arrow-right icon-accessory"></i>
+            <ul class="list">
+                <li class="item" ng-repeat="item in pageData.test">{{item.title}}</li>
+            </ul>
+          </div>
+          <div class="item item-box  item-icon-right">
+            <i class="ion-news-03"></i>
+            <span class="box-title">话题</span>
+            <i class="icon ion-ios-arrow-right icon-accessory"></i>
+            <ul class="list">
+                <li class="item" ng-repeat="item in pageData.share">{{item.title}}</li>
+            </ul>
+          </div>
+          <div class="item item-box  item-icon-right">
+            <i class="ion-news-04"></i>
+            <span class="box-title">美食资讯</span>
+            <i class="icon ion-ios-arrow-right icon-accessory"></i>
+            <ul class="list">
+                <li class="item" ng-repeat="item in pageData.news">{{item.title}}</li>
+            </ul>
+          </div>
+      </div>
+
+  </ion-content>
+
+</ion-view>

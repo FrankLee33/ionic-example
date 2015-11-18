@@ -1,0 +1,502 @@
+@charset "utf-8";
+
+/*视图动画*/
+.fade-in-out.ng-enter, .fade-in-out .ng-enter {
+  -webkit-animation: fadeIn 0.3s;
+  -moz-animation: fadeIn 0.3s;
+  animation: fadeIn 0.3s;
+  position: absolute; }
+.fade-in-out.ng-leave, .fade-in-out .ng-leave {
+  -webkit-animation: fadeOut 0.3s;
+  -moz-animation: fadeOut 0.3s;
+  animation: fadeOut 0.3s;
+  position: absolute; }
+
+
+.slide-in-left {
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0); }
+
+.slide-in-left.ng-enter, .slide-in-left > .ng-enter {
+  -webkit-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 400ms;
+  transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 400ms; }
+
+.slide-in-left.ng-enter-active, .slide-in-left > .ng-enter-active {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slide-in-left.ng-leave, .slide-in-left > .ng-leave {
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms; }
+
+
+
+.slide-in-right {
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0); }
+
+.slide-in-right.ng-enter, .slide-in-right > .ng-enter {
+  -webkit-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 400ms;
+  transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 400ms; }
+
+.slide-in-right.ng-enter-active, .slide-in-right > .ng-enter-active {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slide-in-right.ng-leave, .slide-in-right > .ng-leave {
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms; }
+
+
+
+.slide-in-bottom {
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0); }
+
+.slide-in-bottom.ng-enter, .slide-in-bottom > .ng-enter {
+  -webkit-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 400ms;
+  transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 400ms; }
+
+.slide-in-bottom.ng-enter-active, .slide-in-bottom > .ng-enter-active {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slide-in-bottom.ng-leave, .slide-in-bottom > .ng-leave {
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms; }
+
+
+/* 底部导航图标 */
+.ion-foursix-home{
+  background:url(../img/ion-forsix-home.png) no-repeat center center;
+  display: inline-block;
+  background-size:auto 95%;
+}
+.ion-foursix-home-outline{
+  background:url(../img/ion-forsix-home-outline.png) no-repeat center center;
+  display: inline-block;
+  background-size:auto 95%;
+}
+.ion-foursix-detect{
+  background:url(../img/ion-forsix-detect.png) no-repeat center center;
+  display: inline-block;
+  background-size:auto 95%;
+}
+.ion-foursix-detect-outline{
+  background:url(../img/ion-forsix-detect-outline.png) no-repeat center center;
+  display: inline-block;
+  background-size:auto 95%;
+}
+.ion-foursix-share{
+  background:url(../img/ion-forsix-share.png) no-repeat center center;
+  display: inline-block;
+  background-size:auto 95%;
+}
+.ion-foursix-share-outline{
+  background:url(../img/ion-forsix-share-outline.png) no-repeat center center;
+  display: inline-block;
+  background-size:auto 95%;
+}
+.ion-foursix-letter{
+  background:url(../img/ion-forsix-letter.png) no-repeat center center;
+  display: inline-block;
+  background-size:auto 95%;
+}
+.ion-foursix-letter-outline{
+  background:url(../img/ion-forsix-letter-outline.png) no-repeat center center;
+  display: inline-block;
+  background-size:auto 95%;
+}
+.ion-foursix-user{
+  background:url(../img/ion-forsix-user.png) no-repeat center center;
+  display: inline-block;
+  background-size:auto 95%;
+}
+.ion-foursix-user-outline{
+  background:url(../img/ion-forsix-user-outline.png) no-repeat center center;
+  display: inline-block;
+  background-size:auto 95%;
+}
+.radius-icon{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:auto 55%;
+  display: inline-block;
+}
+.item-rdivider{
+   border:none;
+   background:#fff url(../img/dot.png) no-repeat 9rem center;
+   background-size:61% 1px;
+}
+.item-label-left {
+  font-size:1.1rem!important;
+  border:none;
+}
+.item-label-left .label{
+  color:#666;
+  margin-right:10px;
+}
+.item-rdivider h2{
+  text-indent: 0!important;
+  line-height:3rem!important;
+  color:#656565;
+}
+
+.checkGroupList .row{
+  line-height:40px;
+}
+.checkGroupList .col{
+    text-align: center;
+}
+.checkGroupList .checkBox{
+  font-size:.9rem;
+  border:1px solid #ccc;
+  width:100%;
+  display: inline-block;
+  border-radius: 5px;
+}
+.checkGroupList .checkBox.checked{
+  border-color:#0c72db;
+  background:url(../img/checked.png) no-repeat right center;
+  background-size:auto 40%;
+}
+
+.item-pic-left .big-icon{
+  position: absolute;
+  top: 12px;
+  left: 5px;
+}
+.big-icon{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:auto 55%;
+  display: inline-block;
+}
+.item-btn-right .button{
+   float:right;
+   margin-top:-3.5rem;
+}
+.item.card{
+  box-shadow: none;
+  border-radius: 6px;
+  padding:8px;
+  margin:10px 10px;
+}
+.item.card.item-thumbnail-left{
+  padding-left: 100px!important;
+}
+.item.card>img{
+  height:80%!important;
+  width:auto!important;
+}
+.item.card p{
+  white-space:normal;
+  line-height:1.4rem;
+}
+
+.item.card .pic{
+  height:130px;
+  width:110%;
+  margin-left:-8px;
+  margin-top:-8px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.item.card hr{
+  border:none;
+  border-top:1px solid #ccc;
+  box-shadow: none;
+  clear: both;
+}
+
+.face-list .row{
+  padding:0;
+  margin:2px auto;
+}
+.face-list .row .col{
+  padding:0;
+}
+.face-box{
+  display: inline-block;
+  float: left;
+}
+.face-box .face{
+  width:30px;
+  height:30px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size:auto 100%;
+  border-radius: 4px;
+  position:absolute;
+}
+.face-box .label{
+  text-indent: 35px;
+  line-height: 2rem;
+}
+.reply-label,.love-label{
+  text-indent: 30px;
+  display: inline-block;
+  float: right;
+  margin-right:9px;
+}
+.reply-label:before{
+  display: inline-block;
+  width:20px;
+  height:20px;
+  background:url(../img/reply.png) no-repeat;
+  background-size: 100% 100%;
+  content:'';
+  position: absolute;
+  margin-left:-30px;
+}
+.love-label:before{
+  display: inline-block;
+  width:20px;
+  height:20px;
+  background:url(../img/love.png) no-repeat;
+  background-size: 100% 100%;
+  content:'';
+  position: absolute;
+  margin-left:-30px;
+}
+/*全局设置*/
+img{
+  max-width: 100%;
+}
+.header-pic>img{
+  width:100%;
+}
+.tabs{
+  background:#fff url(../img/dot.png) repeat-x top left;
+  height:3.7rem;
+  padding-top:4px;
+  border:none;
+}
+.tabs .tab-item .icon{
+  height:28px;
+}
+.tabs .tab-item .tab-title{
+  font-size:1rem;
+  line-height: 1.7rem;
+}
+.list .item-divider{
+  font-size:1.2rem;
+  color:#777;
+  background: #e8e8e8;
+}
+.item h2{
+  font-size:1.3rem;
+}
+.item>p{
+  font-size:0.99rem;
+  line-height:2rem;
+}
+.item-icon-right .icon-accessory{
+  font-size:2.5rem;
+}
+.item-thumbnail-left{
+  padding-left:80px;
+  min-height:70px;
+}
+.item-thumbnail-left img{
+    width:58px!important;
+    height:58px!important;
+    border-radius:5px;
+}
+.item-thumbnail-left .time{
+  float:right;
+  margin-top:-70px;
+}
+/*首页主导航*/
+.mtab{
+  text-align: center;
+  background: #5babff;
+  color: #fff;
+  border-top:1px solid #aaa;
+}
+.mtab i{
+  width:35px;
+  height:35px;
+  display: block;
+  margin:0 auto;
+}
+.mtab>.col{
+  border-right:1px solid #fff;
+}
+.mtab>.col:last-child{
+  border:none;
+}
+/*标题栏*/
+.bar-forsix{
+  background:#0c72db;
+}
+.bar-forsix h1{
+  color:#fff;
+  font-size: 1.5rem!important;
+}
+.bar-forsix a{
+  color:#fff;
+}
+.bar-forsix a:hover{
+  color:#fff;
+}
+.bar-forsix .button.button-icon .icon:before,
+.bar-forsix .button.button-icon:before,
+.bar-forsix .button.button-icon.icon-left:before,
+.bar-forsix .button.button-icon.icon-right:before{
+    font-size: 45px;
+}
+/*按钮盒子*/
+.btn-box{
+   background: #fff;
+}
+.btn-box .row{
+  border-bottom:1px solid #ccc;
+}
+.btn-box .row:first-child{
+  border-top:1px solid #ccc;
+}
+.btn-box .row .col{
+  border-right: 1px solid #ccc;
+  text-align: center;
+  padding-top:20px;
+  font-size: 18px;
+  color:#666;
+}
+.btn-box .row .col:last-child{
+  border:none;
+}
+.btn-box .radius-icon{
+margin-bottom: 8px;
+}
+/*内容盒子*/
+.item-box{
+
+}
+.item-box>i{
+  width:3.2rem;
+  height:3.2rem;
+  margin-top:-0.6rem;
+  margin-left:-0.6rem;
+}
+.item-box .box-title{
+  font-size:1.2rem;
+  margin-top:0.4rem;
+  margin-left:0.4rem;
+  position: absolute;
+  color:#777;
+}
+.item-box .box-title.active{
+  color:#0c72db;
+}
+.item-box .icon-accessory{
+    font-size:2rem;
+    position: relative;
+    left:100%;
+    margin-top: -2.9rem;
+    margin-left:1.0rem;
+}
+.item-box .list{
+  margin-top:1.1rem;
+  margin-left:3rem;
+}
+.item-box .list>.item{
+  border-right:none;
+  border-left:none;
+  border-bottom:none;
+  padding-left:0;
+  padding-right:2.2rem;
+  font-size:1.1rem;
+  width:120%;
+}
+.item-box .list>.item:first-child{
+  border-top: none;
+}
+/*照片盒子*/
+.item-pic{
+    position: relative;
+    width:115%!important;
+    padding:0!important;
+}
+.item-pic img{
+  width:100%;
+}
+.item-pic .title{
+  position: absolute;
+  left:0;
+  bottom: 0;
+  line-height: 2rem;
+  background:rgba(0, 0, 0, 0.7);
+  color:#fff;
+  width:100%;
+  text-indent: .5rem;
+}
+.item-pic-left .radius-icon{
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.item-pic-left .pic{
+  width:35px;
+  height:35px;
+  border-radius:5px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block;
+  float:left;
+}
+.item-pic-left h2{
+  float:left;
+  text-indent: 12px;
+  line-height:35px;
+}
+.item-pic-left p{
+  clear:both;
+  text-indent: 12px;
+}
+.gbg{
+  background:#f8f5ee;
+}
+.hidden{
+  display: none;
+}
+/*首页图标*/
+.ion-nav-01{
+  display: inline-block;
+  background:url(../img/ion-nav-01.png) no-repeat center center;
+  background-size:auto 95%;
+}
+.ion-nav-02{
+  display: inline-block;
+  background:url(../img/ion-nav-02.png) no-repeat center center;
+  background-size:auto 95%;
+}
+.ion-news-01{
+  display: inline-block;
+  background:url(../img/ion-news-01.png) no-repeat center center;
+  background-size:auto 95%;
+}
+.ion-news-02{
+  display: inline-block;
+  background:url(../img/ion-news-02.png) no-repeat center center;
+  background-size:auto 95%;
+}
+.ion-news-03{
+  display: inline-block;
+  background:url(../img/ion-news-03.png) no-repeat center center;
+  background-size:auto 95%;
+}
+.ion-news-04{
+  display: inline-block;
+  background:url(../img/ion-news-04.png) no-repeat center center;
+  background-size:auto 95%;
+}

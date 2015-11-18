@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="Access-Control-Allow-Origin" content="*">
+  <script src="http://libs.useso.com/js/jquery/1.9.1/jquery.min.js"></script>
+  <script>
+      function test1(){
+        $.ajax({
+          url:'http://119.10.30.52:8080/qdkyService/service/getVideoList?upId=1',
+          type:'get',
+          dataType:'json',
+          success:function(data){
+            alert(JSON.stringify(data));
+          },error:function(msg){
+            alert(JSON.stringify(msg));
+          }
+        });
+      }
+  </script>
+</head>
+<body>
+  <button onclick="test1()">Test</button>
+</body>
+</html>
